@@ -1,7 +1,7 @@
 import { log } from "console";
 import { Router } from "express";
-import { login } from "../controllers/auth";
+import { signup } from "../controllers/auth";
 
  const authRoutes: Router = Router();
-authRoutes.get('/login',login);
+authRoutes.get('/signup',signup);
 export default authRoutes;
